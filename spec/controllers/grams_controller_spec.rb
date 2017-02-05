@@ -173,5 +173,4 @@ RSpec.describe GramsController, type: :controller do
       expect(Gram.count).to eq 0
     end
   end   # create action
-
 end

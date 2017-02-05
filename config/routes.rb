@@ -4,4 +4,9 @@ Rails.application.routes.draw do
   root 'grams#index'
 
   resources :grams, only: [:new, :create, :edit, :update, :show, :destroy]
+
+  resources :grams do
+    resource :comments, only: :create
+  end
+
 end
