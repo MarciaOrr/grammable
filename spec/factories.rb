@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :user do
     sequence :email do |n|
-      'dummyEmails#{n}@gmail.com'
+      "dummyEmails#{n}@gmail.com"
     end
     password 'secretPassword'
     password_confirmation 'secretPassword'
@@ -11,5 +11,5 @@ FactoryGirl.define do
     message 'hello!'
     association :user
   end
-  
+
 end
