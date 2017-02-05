@@ -25,6 +25,9 @@ class GramsController < ApplicationController
     def edit
     @gram = Gram.find_by_id(params[:id])
     return render_not_found if @gram.blank?
+    if @gram.user != current_user
+      render plain: 'Forbidden :(', status: :Forbidden
+    end
   end
 
   def update
