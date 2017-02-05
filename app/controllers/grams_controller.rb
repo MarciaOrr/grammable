@@ -1,5 +1,5 @@
 class GramsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   
   def index
   end
@@ -56,6 +56,6 @@ class GramsController < ApplicationController
 
   def render_not_found
     render plain: 'Not Found :(', status: :not_found
-  end
+end
 
 end
