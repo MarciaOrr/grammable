@@ -1,1 +1,117 @@
 @import 'bootstrap';
+
+$app_color: #125688;
+
+.top-nav {
+  background-color: white;
+  height: 70px;
+  border-bottom: solid 1px #edeeee;
+  padding: 15px;
+
+
+  .brand {
+    color: $app_color;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;  
+  }
+
+  .add {
+    margin-top: 10px;
+    
+    a {
+      padding-left: 8px;
+      font-weight: bold;
+      color: $app_color;
+      font-size: 16px;
+    }
+  }  
+}   /* end .top_nav */
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 1px rgba(0,0,0, 0.25);
+  margin-top: 40px;
+  border: 1px solid #e8e8e8;
+  border-radius: .25rem;
+  padding: 0;
+
+  .handle {
+    margin: 10px;
+    color: $app_color;
+    font-weight: bold;
+    font-size: 18px;
+  }   /* end .handle */
+
+  p, .message {
+    margin: 20px;
+    font-size: 18px;
+  }
+
+
+}   /* end .card */
+
+.card.form {
+   padding: 20px;
+}
+
+.gram-actions {
+  margin-left: auto;
+  a {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+}
+
+.comments {
+  padding: 20px;
+
+  .comment {
+    margin-top: 5px;  
+    font-size: 16px;
+
+    .comment-handle {
+      color: $app_color;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+  .comment-add {
+    margin-top: 8px;
+    border-top: solid 1px $app_color;
+    padding-top: 4px;
+  }
+}
+
+
+
+
+
+.my-btn {
+  background-color: $app_color;
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  font-side: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* User Log in: space between checkbox and 'Remember me' */
+#user_remember_me {
+  margin-right: 8px;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Josefin Sans', sans-serif;
+}
+

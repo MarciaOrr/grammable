@@ -12,7 +12,7 @@ RSpec.describe CommentsController, type: :controller do
       expect(gram.comments.first.message).to eq 'awesome gram'
     end
 
-    it "should require a user to be logged in to comment on a gram" do
+    it "should require only logged in users to comment on a gram" do
       gram = FactoryGirl.create(:gram)
       post :create, params: { gram_id: gram.id, comment: { message: 'awesome gram'} }
       expect(response).to redirect_to new_user_session_path
@@ -26,3 +26,6 @@ RSpec.describe CommentsController, type: :controller do
     end
   end
 end
+
+
+
